@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #15161a;
+  color: #fff;
+  font-family: Roboto, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.NavBar {
+  background-color: #1a1c22;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
+  padding: 1em 0;
+}
+.NavBar div a img {
+  width: 300px;
+  cursor: pointer;
+}
+.pesquisa {
+  margin-right: 70px;
+}
+.NavBar div input {
+  background-image: url("/static/img/icons8-pesquisar.svg");
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: right 5px bottom 5px;
+  height: 35px;
+  width: 350px;
+  border: none;
+  border-radius: 15px;
+  outline-color: #084ab2;
+  padding: 0.5em;
+}
+.listitems {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-right: 3em;
+  padding: 1em;
+  font-size: 18px;
+}
+.listitems .Content_items {
+  display: flex;
+  margin-right: 1em;
+  background-color: #084ab2;
+  padding: 0.2em;
+  border-radius: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+.listitems div div {
+  display: flex;
+  border-radius: 15px;
+  margin-right: 1em;
+  padding: 0.2em;
+}
+.listitems div {
+  transition: background-color 0.4s ease-out;
+}
+.listitems div:hover {
+  background-color: #3d7add;
+}
+.listitems .perfilMenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin-left: 30px;
+  border-radius: 50%;
+  border-radius: 100%;
+  background-color: #084ab2;
+}
+.listitems div div {
+  margin: 0;
+}
+.Container {
+  min-height: 75vh;
+}
+footer {
+  background-color: #272a31;
+  color: #fff;
+}
+footer div {
+  flex-direction: column;
+  padding: 30px;
+}
+footer div div ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  font-size: 25px;
+}
+footer ul li {
+  margin-right: 1em;
+  cursor: pointer;
+  transition: color #fff 0.4s ease-out;
+}
+footer ul li:hover {
+  color: #3d7add;
+}
+footer div div p {
+  transition: color #fff 0.4s ease-out;
+  text-align: center;
+}
+footer div div p a:hover {
+  color: #3d7add;
+}

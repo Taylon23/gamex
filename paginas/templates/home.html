@@ -1,0 +1,131 @@
+{% extends 'TemplateModel.html' %}
+{% load static %}
+
+
+{% block Conteudo %}
+<div class="Container">
+    <div class="Catalogo_topo">
+        <img src="{% static 'img/Catalogo-topo.webp' %}" alt="Catalogo" width="100%">
+    </div>
+    <div class="Titulo">
+        <div>
+            <h1>Aproveite Dos melhores jogos...</h1>
+        </div>
+        <div>
+            <button type="submit" class="btn_vermais">Ver Mais</button>
+        </div>
+    </div>
+    <div class="ContentJogos">
+        <div class="jogos">
+            <div>
+                <img src="{% static 'img/Demons Souls.webp' %}" alt="jogo" width="300px">
+            </div>
+            <div>
+                <p class="title_game">Demon's Souls</p>
+            </div>
+            <div>
+                <p> Totalmente reconstruído do zero, este remake convida você a vivenciar a história inquietante e o
+                    combate cruel de Demon's Souls™.</p>
+            </div>
+            <div>
+                <p>Preço : R$190</p>
+            </div>
+            <div>
+                <div><i class="fas fa-heart" id="favorite"></i></div>
+            </div>
+        </div>
+        <div class="jogos">
+            <div>
+                <img src="{% static 'img/Ghosts of Tsushima.webp' %}" alt="jogo" width="300px">
+            </div>
+            <div>
+                <p class="title_game">Ghosts of Tsushima.</p>
+            </div>
+            <div>
+                <p> Ghost of Tsushima é um jogo eletrônico de ação-aventura desenvolvido pela Sucker Punch Productions e
+                    publicado pela Sony Interactive Entertainment.</p>
+            </div>
+            <div>
+                <p>Preço : R$240</p>
+            </div>
+            <div>
+                <div><i class="fas fa-heart" id="favorite"></i></div>
+            </div>
+        </div>
+        <div class="jogos">
+            <div>
+                <img src="{% static 'img/Spider Man.webp' %}" alt="jogo" width="300px">
+            </div>
+            <div>
+                <p class="title_game">Spider Man Miles Morales.</p>
+            </div>
+            <div>
+                <p> O adolecente Miles Morales está se
+                    ajustando a sua nova casa, enquanto segue os passos de seu mentor, Peter Parker, como o novo
+                    Homem-aranha.</p>
+            </div>
+            <div>
+                <p>Preço : R$200</p>
+            </div>
+            <div>
+                <div><i class="fas fa-heart" id="favorite"></i></div>
+            </div>
+        </div>
+        <div class="jogos">
+            <div>
+                <img src="{% static 'img/Horizon Forbidden West.webp' %}" alt="jogo" width="300px">
+            </div>
+            <div>
+                <p class="title_game">Horizon Forbidden West</p>
+            </div>
+            <div>
+                <p> Junte-se a Aloy para desbravar o Oeste Proibido, uma região majestosa e perigosa que esconde novas
+                    ameaças cheias de mistérios.</p>
+            </div>
+            <div>
+                <p>Preço : R$270</p>
+            </div>
+            <div>
+                <div><i class="fas fa-heart" id="favorite"></i></div>
+            </div>
+        </div>
+        <div class="jogos">
+            <div>
+                <img src="{% static 'img/Returnal.webp' %}" alt="jogo" width="300px">
+            </div>
+            <div>
+                <p class="title_game">Returnal</p>
+            </div>
+            <div>
+                <p>Nestejogo de tiro em terceira pessoa de RPG tipo masmorra, cada tentativa de fuga é uma jornada de
+                    alto risco e perigosa</p>
+            </div>
+            <div>
+                <p>Preço : R$190</p>
+            </div>
+            <div>
+                <div><i class="fas fa-heart" id="favorite"></i></div>
+            </div>
+        </div>
+        <div class="jogos">
+            <div>
+                <img src="{% static 'img/Destruction AllStars.webp' %}" alt="jogo" width="300px">
+            </div>
+            <div>
+                <p class="title_game">Destruction AllStars</p>
+            </div>
+            <div>
+                <p>AllStars destemidos e carismáticos compõem a lista
+                    de concorrentes internacionais que competem pelo Campeonato Global Destruction Federation.</p>
+            </div>
+            <div>
+                <p>Preço : R$150</p>
+            </div>
+            <div>
+                <div><i class="fas fa-heart" id="favorite"></i></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

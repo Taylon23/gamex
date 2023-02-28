@@ -1,0 +1,58 @@
+.ContentJogos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  margin: 50px 20px;
+}
+.Titulo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px;
+}
+.btn_vermais {
+  padding: 8px 15px;
+  background-color: #4a81da;
+  border-radius: 15px;
+  border: none;
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+  transition: background-color 0.4s ease-out;
+  cursor: pointer;
+}
+.btn_vermais:hover {
+  background-color: #0b2b5f;
+  color: #fff;
+}
+.ContentJogos div div img {
+  border-radius: 15px;
+  cursor: pointer;
+}
+.ContentJogos div div p {
+  margin: 0.4em 0;
+  font-size: 16px;
+  flex-wrap: wrap;
+}
+.ContentJogos div div .title_game {
+  font-size: 18px;
+  font-weight: bold;
+}
+.ContentJogos div div #favorite {
+  font-size: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.jogos {
+  background-color: #272a31;
+  padding: 1em;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 15px;
+  max-width: 335px;
+  cursor: pointer;
+  transition: background-color 0.4s ease-out;
+}
+.jogos:hover {
+  background-color: #05398d;
+}

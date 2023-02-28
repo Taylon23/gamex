@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Roboto google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Css das paginas -->
+    <link rel="stylesheet" href="{% static 'css/TemplateModel.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Home.css' %}">
+    <!-- Icons FontAwesome -->
+    <link href="{% static 'fontawesomefree/css/fontawesome.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'fontawesomefree/css/brands.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'fontawesomefree/css/solid.css' %}" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    {% block Navbar%}
+    <header>
+        <nav class="NavBar">
+            <div>
+                <a href=""><img src="{% static 'img/LogoMarca.png' %}" alt="LogoMarca"></a>
+            </div>
+            <div class="pesquisa">
+                <input type="text" placeholder="Buscar...">
+            </div>
+            <div>
+                <ul class="listitems">
+                    <div class="Content_items">
+                        <div>
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="items">
+                            <li><a href="#">Home</a></li>
+                        </div>
+                    </div>
+                    <div class="Content_items">
+                        <div>
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <div class="items">
+                            <li><a href="#">Jogos</a></li>
+                        </div>
+                    </div>
+                    <div class="Content_items">
+                        <div>
+                            <i class="fas fa-list"></i>
+                        </div>
+                        <div class="items">
+                            <li><a href="#">Categorias</a></li>
+                        </div>
+                    </div>
+                    <div class="Content_items">
+                        <div>
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <div class="items">
+                            <li><a href="#">Noticia</a></li>
+                        </div>
+                    </div>
+                    <div class="perfilMenu">
+                        <div>
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    {% endblock %}
+         
+    {% block Conteudo %}
+    <div class="Container">
+
+    </div>
+    {% endblock %}
+
+         
+    {% block rodape %}
+    <footer>
+        <div class="rodape">
+            <div>
+                <ul>
+                    <li><i class="fab fa-facebook"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-linkedin"></i></li>
+                </ul>
+            </div>
+            <div>
+                <p>&copy;2023 Gamex. Todos os direitos reservados.</p>
+            </div>
+            <div>
+                <p> <a href="#">Política de privacidade</a> | <a href="#">Termos legais</a> | <a href="#">Acordo de
+                        Subscrição Gamex</a> | <a href="#">Cookies</a></p>
+            </div>
+        </div>
+    </footer>
+    {% endblock %}
+</body>
+
+</html>
